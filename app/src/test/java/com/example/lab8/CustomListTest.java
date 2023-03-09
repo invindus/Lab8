@@ -57,20 +57,20 @@ public class CustomListTest {
         Assertions.assertTrue(list.hasCity(city));
     }
 
-//    @Test
-//    public void deleteCityTest(){
-//        countCityTest();
-//        addCityTest();
-//        hasCityTest();
-//        City city = new City("Edmonton", "AB");
-//        list.addCity(city);
-//        assertEquals(3, list.getCount());
-//        Assertions.assertTrue(list.hasCity(city));
-//
-//        list.deleteCity(city);
-//        assertEquals(2, list.getCount());
-//        Assertions.assertFalse(list.hasCity(city));
-//    }
+    @Test
+    public void deleteCityTest(){
+        countCityTest();
+        addCityTest();
+        hasCityTest();
+        City city = new City("Edmonton", "AB");
+        list.addCity(city);
+        assertEquals(3, list.getCount());
+        Assertions.assertTrue(list.hasCity(city));
+
+        list.deleteCity(city);
+        assertEquals(2, list.getCount());
+        Assertions.assertFalse(list.hasCity(city));
+    }
 //
 //    @Test
 //    void testDeleteException(){
